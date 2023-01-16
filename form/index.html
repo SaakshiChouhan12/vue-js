@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form name="RegForm" action="/submit.php" onsubmit=" return scriptForm()" method="post">  
+
+        <p>Name: <input type="text" id="username" size=65 name="Name"> </p> <span id="usernameerror">*</span><br> 
+        <p>E-mail Address: <input type="text" id="email" size=65 name="EMail">  </p> <span id="emailerror">*</span><br> 
+        <p>Password: <input type="password" id="password"   size=65 name="Password">  </p> <span id="passworderror">*</span><br> 
+
+        <p>Mobile: <input type="text" id="phone" size=65 name="Telephone"> </p><span id="mobileerror">*</span><br> 
+        <p><input type="submit" value="Submit" name="Submit"> </p>
+       
+       </form>
+    
+       <script>
+       function scriptForm(){
+        let uname = document.getElementById("username");
+        let eml = document.getElementById("email");
+        let pass = document.getElementById("password");
+        let mobilee = document.getElementById("phone");
+         
+           if (uname.value == "") {
+               document.getElementById("usernameerror").innerHTML = "<b>This field is required</b>"
+               console.log("this field is required");
+               return false;
+                
+           }
+             if (eml.value == "") {
+                document.getElementById("emailerror").innerHTML = "<b>This field is required</b>"
+                console.log("this field is required");
+                return false;
+            }
+            if (pass.value == "") {
+                document.getElementById("passworderror").innerHTML = "<b>This field is required</b>"
+                console.log("this field is required");
+                return false;
+            }
+            if (mobilee.value == "") {
+                document.getElementById("mobileerror").innerHTML = "<b>This field is required</b>"
+                console.log("this field is required");
+                return false;
+            }
+
+            return true; 
+            
+       }
+
+
+
+       </script>
+       
+</body>
+</html>
