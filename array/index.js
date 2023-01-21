@@ -1,32 +1,18 @@
+class book{
 
-//remove last element of array
-const arr= ['A', 'B', 'C', 'D'];
-
-const eleLast = arr.pop();
-console.log(eleLast); 
-
-// push element in array
-arr.push('E' , 'F');
-console.log(arr);
-
-// add index in front of element
-for (var i = 0; i < arr.length; i++)
-    { console.log(arr[i]+ '('+ i +')'); }
-
-// mystring
-
-myString= arr.join('-');
-
-//eagle
-   const eagle = ["stork", "raven", "eagle", "ostrich"];
-let index = eagle.indexOf("raven");
-console.log(index);
-
-
-const startsWithN = eagle.filter((eagles) => eagles.startsWith("e"));
-
-console.log(startsWithN);
-
-
-  let eBirds = eagle.filter(firstN());
- console.log(eBirds);
+    books(title,price){
+     this.title=title;
+     this.price=price;
+  
+     this.authors = new Array(arguments.length-2); 
+  
+     for(i=0;i<arguments.length-2;i++){ 
+   
+       this.authors[i] = arguments[i+2]; 
+   
+     } 
+     var JavaNut = new book("Java Foundation  ", 731, Ross); 
+   var JSTDR = new book("Javascript", 776, Monica);
+   }
+  }
+  
