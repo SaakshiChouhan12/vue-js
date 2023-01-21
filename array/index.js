@@ -18,9 +18,15 @@ for (var i = 0; i < arr.length; i++)
 myString= arr.join('-');
 
 //eagle
-const eagle = ["stork", "raven", "eagle", "ostrich"];
+   const eagle = ["stork", "raven", "eagle", "ostrich"];
 let index = eagle.indexOf("raven");
 console.log(index);
 
- eBirds=eagle.toString().startsWith("e");
+
+const startsWithN = eagle.filter((eagles) => eagles.startsWith("e"));
+
+console.log(startsWithN);
+
+
+  let eBirds = eagle.filter(firstN());
  console.log(eBirds);
