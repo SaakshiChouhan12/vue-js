@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "name": "sam",
+      "email": "sam25@gamil.com",
+      "password": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "json",
+      "author": "typ"
+    },
+    {
+      "email": "Saakshichouhan21@gmail.com",
+      "name": "sakshiii",
+      "password": "xsca",
+      "id": 8
+    },
+    {
+      "email": "jkg",
+      "name": "jkvb,",
+      "password": "hkg",
+      "id": 21
+    },
+    {
+      "email": "hvjhlkj",
+      "name": "ansh",
+      "password": "ba25",
+      "id": 22
+    },
+    {
+      "email": "hkgjhi",
+      "name": "sakshi",
+      "password": "1250",
+      "id": 23
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "lapinoz",
+      "address": "kashmir",
+      "contact": "7886989",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "dominos",
+      "address": "prahlad nagar",
+      "contact": "7689808"
+    },
+    {
+      "name": "asati",
+      "address": "punjab",
+      "contact": "685579",
+      "id": 3
+    },
+    {
+      "name": "kfc",
+      "address": "delhi",
+      "contact": "324111",
+      "id": 4
+    }
+  ]
+}
